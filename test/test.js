@@ -11,17 +11,17 @@ describe('Testing on Arrays', () => {
   });
 });
 
-// describe('Testing Star Wars API', () => {
-//   it('should fetch Luke Skywaler\'s data!', (done) => {
-//     apiMethods.getStarWarsCharacterData('people/1/', (resp, data) => {
-//       assert.equal('Luke Skywalker', data.name);
-//       done();
-//     });
-//   });
-//   it('should return 200 status code', function () {
-//     return apiMethods.getStatusCode('people/1/')
-//       .then((status) => {
-//         assert.equal(status, 200);
-//       });
-//   });
-// });
+describe('Testing Start Wars API', () => {
+  it('should fetch Luke Skywalker\'s data!', (done) => {
+    apiMethods.getStarWarsCharacterData('people/1/', (resp, data) => {
+      assert.equal('Luke Skywalker', data.name);
+      done();
+    });
+  });
+  it('should return 200 status code', function () {
+    return apiMethods.getStatusCode('people/1/')
+      .then((status) => {
+        assert.equal(status, 200);
+      });
+  });
+});
